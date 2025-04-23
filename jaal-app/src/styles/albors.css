@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  box-sizing:   border-box;
+  margin:       0;
+  padding:      0;
+  font:         inherit;
+}
+*{
+  padding:0;
+  margin:0;
+  border: 0;
+  box-sizing:border-box;
+	font-size: 100%;
+	font: inherit;
+  vertical-align:baseline;
+}
+
+img,
+picture {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),
+  url('/fonts/Vazirmatn[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.rtl{direction:rtl !important;}
+.ltr{direction:ltr !important;}
+
+/*
+Remove the default font size and weight for headings.
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  /* TWCSS */
+  font-weight: inherit;
+  /* TWCSS */
+  overflow-wrap: break-word;
+  /* ? */
+}
+
+/* TWCSS
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+:root{
+    --background: #f0f0f0;
+    --text: #111111;
+    --primary:#45c0ad;
+    --secondary:#cbcab1;
+    --accent:#a5b18b;
+  
+    --c1:#FFFFFF;--c2:#111111;--c4:#7c68b3;--c5:#f9a39f;
+
+    --b1:#f0f0f0;
+    --b2:#e2e2e2;
+    --b3:#535353;
+    --b4:#333333;
+  }
+  

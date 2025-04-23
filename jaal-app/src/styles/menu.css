@@ -1,0 +1,66 @@
+#popover{
+    position:fixed;
+
+}
+
+#popover dialog.popover{
+    position:fixed;
+    margin:auto;
+    inset: 0;
+}
+#popover dialog.popover::backdrop{
+    background: rgba(19, 18, 18, 0.479);
+    backdrop-filter: blur(3px); /* BUG: BLUR DOESNT WORK IN DESKTOP MODE?*/
+}
+
+
+main{
+    width:100vw;
+    width:100dvw;
+
+    height:100vh;
+    height:100dvh;
+}
+#menu{background-color:var(--text);}
+#menu button{background-color:transparent;}
+@media screen and (min-width: 540px) {
+    :root{
+        --menu-witdh: 120px;
+        --side-witdh: 120px;
+        --view-witdh: 120px;
+    }
+    main{
+        display:grid;
+        grid-template-columns:64px 120px 1fr;
+    }
+    #menu{
+        padding:1rem 0;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:space-between;
+    }
+    #menu .menu-top,#menu .menu-bot{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:1rem;
+    }
+    #menu img{
+        width:36px;
+        padding:.25rem;
+    }
+    #menu img:hover{
+        cursor:pointer;
+        border-radius:.5rem;
+        background-color:grey;
+    }
+    #menu .jaal-text{
+        cursor: default;
+        color:var(--background);
+    }
+
+    #side{
+    }
+
+}
